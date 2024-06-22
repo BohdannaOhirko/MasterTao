@@ -18,8 +18,7 @@
   }
    
   a {
-    color: #fff;
-    text-decoration: none;
+    color: $color-primary;
   }
   
   
@@ -124,6 +123,7 @@
   .h5,
   .h6 {
       line-height: 126%;
+      font-weight: 700;
   }
   
   h1,
@@ -166,39 +166,43 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    position: relative;
   }
   
   [type=checkbox] + label:before,
   [type=radio] + label:before {
     content: "";
     display: inline-block;
+    position: absolute;
     background-color: #FFFFFF;
     border: 1px solid #282B38;
     border-radius: 4px;
     width: 24px;
     height: 24px;
-    margin-right: 9px;
-    margin-bottom: 6px;
+    left: 0px;
+    bottom: 0px;
   }
   [type=checkbox]:checked + label:after {
     content: "";
     display: inline-block;
     border: 2px solid $color-primary;
+    position: absolute;
     border-radius: 4px;
     width: 24px;
     height: 24px;
-    margin-left: -167px;
-    margin-bottom: 8px;
+    left: 0px;
+    bottom: 0px;
   }
  [type=radio]:checked + label:after{
     content: "";
     display: inline-block;
     border: 2px solid $color-primary;
+    position: absolute;
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    margin-left: -71px;
-    margin-bottom: 6px;
+    left: 0px;
+    bottom: 0px;
   }
   [type=radio] + label:before {
     border-radius: 50%;
@@ -211,18 +215,22 @@
   
   [type=radio]:checked + label:before {
     content: "•";
+    position: absolute;
     background: #fff;
     font-size: 40px;
     line-height: 19px;
     color: #282B38;
     text-align: center;
+    left: 0;
+    bottom: 0;
   }
-  
-  [type=checkbox] + label:hover::before,
-  [type=radio] + label:hover::before {
-    border: 1px solid $color-primary;
+  [type=radio]:hover + label:before, [type=checkbox]:hover + label:before
+  {
+   border: 2px solid $color-primary;
   }
-  
+  label{
+    padding-left: 35px;
+  }
   .markup-button-container button {
     margin-bottom: 10px;
   }
