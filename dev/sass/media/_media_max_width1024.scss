@@ -9,16 +9,18 @@
 		left: 0;
 		flex-direction: column;
 		background-color: #363a4d;
-		padding: 0 40px 60px;
+		padding: 0px 40px 60px;
 		align-items: center;
+		
 		&.show {
 			display: flex;
+			max-height: 515px;
 		}
 	}
 	.header-nav-list {
 		flex-direction: column;
 		padding: 37px 12px 24px;
-		gap: 0px;
+		gap: 11px;
 	}
 	.header-nav-list-link {
 		font-size: 24px;
@@ -31,4 +33,5 @@
 		line-height: 23.36px;
 		font-size: 16px;
 	}
+
 }

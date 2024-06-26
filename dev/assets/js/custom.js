@@ -6,6 +6,7 @@
 const burger = document.querySelector('#burger');
 const mobileContainer = document.querySelector('.mobile-container');
 function showBurgerMenu(){
+  burger.classList.toggle('open');
   mobileContainer.classList.toggle('show');
 }
 showBurgerMenu();
