@@ -1,0 +1,36 @@
+.header-nav {
+	@extend .container;
+	display: flex;
+	padding-top: 26px;
+	padding-bottom: 39px;
+}
+.mobile-container {
+	display: flex;
+	width: 100%;
+}
+.header-nav-list {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 45px;
+	padding: 4px 12px 0px 12px;
+	position: relative;
+
+	&-link {
+		color: $text-color;
+		text-decoration: none;
+		line-height: 23.36px;
+	}
+	&-link:hover {
+		color: orange;
+	}
+}
+.btn {
+	padding: 13px 21px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 21.9px;
+	text-align: center;
+	border-radius: 90px;
+	letter-spacing: 0.4px;
+}
