@@ -1,22 +1,28 @@
 @media screen and (max-width: 1024px) {
-	.logo img{
+	.header-nav {
+		padding-top: 18px;
+	}
+
+	.logo img {
 		max-width: 126px;
 	}
 	.mobile-container {
 		display: none;
-		position: absolute;
-		top: 105px;
-		left: 0;
-		flex-direction: column;
-		background-color: #363a4d;
-		padding: 0px 40px 60px;
-		align-items: center;
 		
 		&.show {
 			display: flex;
 			max-height: 515px;
+			position: absolute;
+			top: 105px;
+			left: 0;
+			flex-direction: column;
+			background-color: #363a4d;
+			padding: 0px 40px 60px;
+			align-items: center;
+			z-index: 2;
 		}
 	}
+
 	.header-nav-list {
 		flex-direction: column;
 		padding: 37px 12px 24px;
@@ -33,5 +39,4 @@
 		line-height: 23.36px;
 		font-size: 16px;
 	}
-
 }
