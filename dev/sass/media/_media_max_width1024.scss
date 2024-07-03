@@ -8,7 +8,7 @@
 	}
 	.mobile-container {
 		display: none;
-		
+
 		&.show {
 			display: flex;
 			max-height: 515px;
@@ -34,9 +34,75 @@
 		color: #fff;
 	}
 	.btn {
-		padding: 22px 85px 23px 85px;
-		font-weight: 600;
-		line-height: 23.36px;
-		font-size: 16px;
+		padding: 21px 82px;
+	}
+
+	.slider-info {
+		padding: 0;
+		.swiper-slide {
+			min-height: calc(100vh - 71px);
+			border-radius: 0;
+			padding: 0 20px;
+			background-position: center;
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				background-color: #04051199;
+				z-index: 1;
+			}
+		}
+		.btn-lg {
+			padding: 19.6px 25px;
+		}
+		.swiper-pagination {
+			display: flex;
+			left: 37%;
+			gap: 18px;
+		}
+
+		.banner {
+			margin: 0 auto;
+			position: relative;
+			max-width: 276px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			z-index: 1;
+			&-title {
+				font-size: 32px;
+				line-height: 40.32px;
+			}
+			&-description {
+				font-size: 16px;
+				line-height: 21.68px;
+				margin-bottom: 20px;
+			}
+		}
+		.arrow-container {
+			display: none;
+		}
+	}
+	.template-title {
+		h2 {
+			font-size: 24px;
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		&:after {
+			bottom: 42px;
+		}
+
+		&.half-section {
+			margin: 0 auto;
+			text-align: center;
+		}
 	}
 }
