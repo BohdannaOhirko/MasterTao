@@ -462,56 +462,46 @@ ul.slick-dots {
 }
 
 .template-title {
-	text-align: center;
-	padding-bottom: 18px;
-	margin-bottom: 50px;
-	position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
 
-	h2 {
-		line-height: 124.5%;
-		text-transform: uppercase;
-		margin-bottom: 6px;
-	}
+    &::after {
+        content: "";
+        position: absolute;
+        width: 84px;
+        height: 2px;
+        background-color: $color-secondary;
+        left: 50%;
+        bottom: 47px;
+        transform: translate(-50%, 0);
+    }
 
-	h3 {
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 1.25;
-	}
+    h2 {
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
 
-	&:after {
-		content: "";
-		position: absolute;
-		left: 50%;
-		top: calc(100% - 2px);
-		transform: translate(-50%, 0);
-		width: 85px;
-		height: 2px;
-		background-color: $color-secondary;
-	}
+    h3 {
+        font-size: 24px;
+        font-weight: 300;
+        
+    }
 
-	/*type 2*/
-	&.col-lg-7 {
-		margin-bottom: 35px;
-		text-align: left;
+    &.half-section {
+        max-width: 600px;
+        width: 100%;
+        text-align: left;
 
-		h2 {
-			&:after {
-				content: "";
-				width: 85px;
-				height: 2px;
-				background-color: $color-secondary;
-				display: inline-block;
-				margin: 10px 20px;
-			}
-		}
-
-		&.template-title {
-			&:after {
-				display: none;
-			}
-		}
-	}
+        h2:after {
+            width: 100px;
+            height: 2px;
+            background-color: #89C249;
+            margin: 8px 20px;
+        }
+    }
 }
 
 .input-box {
@@ -554,15 +544,15 @@ ul.slick-dots {
 	@include default-bg-lg;
 }
 
-// body.overflow-hidden {
-//     &:before {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100vw;
-//         height: 100vh;
-//         background-color: #0000008c;
-//         backdrop-filter: blur(4px);
-//     }
-// }
+.overflow-hidden {
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #0000008c;
+		backdrop-filter: blur(4px);
+	}
+}

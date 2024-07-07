@@ -1,3 +1,24 @@
 @media (min-width: 1025px) {
+    .template-title{
 
+        &.half-section {
+            &:after {
+                display: none;
+            }
+    
+            h2:after {
+                content: "";
+                display: inline-block;
+            }
+        } 
+    }
+
+    .template-title {
+        &.text-lg-start {
+            &:after {
+                left: 0;
+                transform: none;
+            }
+        }
+    }
 }
