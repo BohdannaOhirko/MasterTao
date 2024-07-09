@@ -12,7 +12,7 @@ mobileContainer.classList.toggle("show");
 function showBurgerMenu() {
 	burger.classList.toggle("open");
 	mobileContainer.classList.toggle("show");
-	body.classList.toggle("overflow-hidden");
+	// body.classList.toggle("overflow-hidden");
 }
 
 showBurgerMenu();
