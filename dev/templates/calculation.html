@@ -1,0 +1,72 @@
+<section class="calculation">
+	<div class="container">
+		<div class="template-title half-section">
+			<h2>Получить рассчет стоимости доставки вашего груза</h2>
+		</div>
+		<form class="calculation-form">
+			<div class="form-row">
+				<div class="form-column">
+					<div class="input-box">
+						<label for="category">Категория товара:</label>
+						<input id="category" type="text" placeholder="Категория товара" />
+					</div>
+					<div class="input-box">
+						<label for="weight">Вес груза (кг):</label>
+						<input id="weight" type="text" placeholder="Вес груза" />
+					</div>
+				</div>
+				<div class="form-column">
+					<div class="input-box">
+						<label for="price">Стоимость груза:</label>
+						<input id="price" type="text" placeholder="Стоимость груза" />
+					</div>
+					<div class="input-box">
+						<label for="value">Объем груза (м3):</label>
+						<input id="value" type="text" placeholder="Объем груза" />
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-column">
+					<div class="variation-box">
+						<div class="control-box">
+							<input id="insurance" type="checkbox" value="insurance" />
+							<label for="insurance">Страховка</label>
+						</div>
+						<div class="control-box">
+							<input id="paperwork" type="checkbox" value="paperwork" />
+							<label for="paperwork">Таможенное оформление</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-column ">
+					<div class="input-box">
+						<label for="cod">Код ТН ВЭД:</label>
+						<input id="cod" type="text" placeholder="Код ТН ВЭД:" />
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-column">
+					<div class="input-box">
+						<div id="file-name"></div>
+
+						<input id="calculation-file" type="file" />
+
+						<label for="calculation-file" class="calculation-file"
+							>Загрузить фото товара</label
+						>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-column">
+					<button type="button" class="btn btn-primary btn-lg">
+						Следующий шаг<img src="assets/img/arrow.svg" class="icon" />
+					</button>
+				</div>
+			</div>
+		</form>
+		<img src="assets/img/man.png" class="calculation-decoration" alt="decoration">
+	</div>
+</section>

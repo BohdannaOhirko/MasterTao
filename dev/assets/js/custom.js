@@ -12,7 +12,7 @@ mobileContainer.classList.toggle("show");
 function showBurgerMenu() {
 	burger.classList.toggle("open");
 	mobileContainer.classList.toggle("show");
-	// body.classList.toggle("overflow-hidden");
+	body.classList.toggle("overflow-hidden");
 }
 
 showBurgerMenu();
@@ -37,4 +37,10 @@ const swiper = new Swiper(".slider-info", {
 	// 		},
 	// 	},
 	// },
+});
+
+const fileInput = document.querySelector("#calculation-file");
+const fileName = document.querySelector("#file-name");
+fileInput.addEventListener("change", () => {
+	fileName.innerHTML = fileInput.files[0].name;
 });

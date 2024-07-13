@@ -486,6 +486,7 @@ ul.slick-dots {
         font-size: 36px;
         text-transform: uppercase;
         margin-bottom: 6px;
+		line-height:44.82px;
     }
 
     h3 {
@@ -495,12 +496,12 @@ ul.slick-dots {
     }
 
     &.half-section {
-        max-width: 600px;
+        max-width: 620px;
         width: 100%;
         text-align: left;
 
         h2:after {
-            width: 100px;
+            width: 85px;
             height: 2px;
             background-color: #89C249;
             margin: 8px 20px;
@@ -548,14 +549,14 @@ ul.slick-dots {
 	@include default-bg-lg;
 }
 
-.overflow-hidden {
+body.overflow-hidden {
 	&:before {
 		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100vw;
-		// height: 100vh;
+		height: 100vh;
 		background-color: #0000008c;
 		backdrop-filter: blur(4px);
 	}
