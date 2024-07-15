@@ -6,16 +6,14 @@
 const burger = document.querySelector("#burger");
 const mobileContainer = document.querySelector(".mobile-container");
 const body = document.querySelector("body");
-burger.classList.toggle("open");
-mobileContainer.classList.toggle("show");
+burger.classList.toggle("show");
+mobileContainer.classList.toggle("open");
 
 function showBurgerMenu() {
 	burger.classList.toggle("open");
 	mobileContainer.classList.toggle("show");
 	body.classList.toggle("overflow-hidden");
 }
-
-showBurgerMenu();
 burger.addEventListener("click", showBurgerMenu);
 
 const swiper = new Swiper(".slider-info", {
