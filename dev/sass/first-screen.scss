@@ -19,9 +19,11 @@
 
 	.swiper-pagination {
 		display: flex;
-		left: 47%;
 		gap: 18px;
 		bottom: 42px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: auto;
 	}
 
 	.arrow-container {

@@ -239,66 +239,73 @@ ul {
 }
 
 .btn {
-	font-weight: 600;
-	font-size: 15px;
-	line-height: 146%;
-	border-radius: 90px;
-	padding: 13px 17px;
-	display: inline-flex;
-	align-items: center;
-	letter-spacing: 0.6px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 146%;
+    border-radius: 90px;
+    padding: 13px 17px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.6px;
 
-	&:hover {
-		.icon {
-			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg)
-				brightness(180%) contrast(101%);
-		}
-	}
+    &:hover {
+        .icon {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
+        }
+    }
 
-	&:focus-visible {
-		box-shadow: none;
-	}
+    &:focus-visible {
+        box-shadow: none;
+        outline: none;
+    }
 
-	&:focus {
-		box-shadow: none;
-	}
+    &:active:focus, &:focus {
+        box-shadow: none;
+        .icon {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
+        }
+    }
+    
 }
 
 .btn-primary {
-	background-color: $color-primary;
-	border-color: $color-primary;
+    background-color: $color-primary;
+    border-color: $color-primary;
 
-	&:hover,
-	&:active,
-	&:focus {
-		background-color: $color-secondary;
-		border-color: $color-secondary;
-	}
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+    }
+
 }
 
 .btn-secondary {
-	background-color: transparent;
-	border-color: $color-primary;
+    background-color: transparent;
+    border-color: $color-primary;
 
-	&:hover,
-	&:active,
-	&:focus {
-		background-color: $color-secondary;
-		border-color: $color-secondary;
-	}
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+    }
 }
 
 .btn-lg {
-	padding: 19.6px 34px;
-	font-size: 16px;
+    padding: 19.6px 34px;
+    font-size: 16px;
 
-	.icon {
-		margin: 0 -14px 0 47px;
-		width: 27px;
-		height: 27px;
-		transition: 0.3s;
-	}
+    .icon {
+        margin: 0 -14px 0 47px;
+        width: 27px;
+        height: 27px;
+        transition: .3s;
+    }
 }
+
+
 
 /*scroll*/
 .scroll {
@@ -466,8 +473,7 @@ ul.slick-dots {
 }
 
 .template-title {
-    padding-bottom: 60px;
-    margin-bottom: 0;
+    padding-bottom: $section-title-margin;
     text-align: center;
     position: relative;
 
@@ -476,7 +482,7 @@ ul.slick-dots {
         position: absolute;
         width: 84px;
         height: 2px;
-        background-color: $color-secondary;
+        background-color: $color-primary;
         left: 50%;
         bottom: 47px;
         transform: translate(-50%, 0);
@@ -503,10 +509,10 @@ ul.slick-dots {
         h2:after {
             width: 85px;
             height: 2px;
-            background-color: #89C249;
-            margin: 8px 20px;
+            background-color: $color-secondary;
+            margin: 11px 20px;
         }
-    }
+	}
 }
 
 .input-box {

@@ -16,7 +16,8 @@ function showBurgerMenu() {
 }
 burger.addEventListener("click", showBurgerMenu);
 
-const swiper = new Swiper(".slider-info", {
+const swiperInfo = new Swiper(".slider-info", {
+	spaceBetween: 12,
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
@@ -24,21 +25,40 @@ const swiper = new Swiper(".slider-info", {
 	},
 
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		enabled: false,
 	},
 
-	// breakpoints: {
-	// 	992: {
-	// 		navigation: {
-	// 			enabled: true,
-	// 		},
-	// 	},
-	// },
+	breakpoints: {
+		1025: {
+			spaceBetween: 40,
+			navigation: {
+				enabled: true,
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		},
+	},
 });
 
-const fileInput = document.querySelector("#calculation-file");
-const fileName = document.querySelector("#file-name");
-fileInput.addEventListener("change", () => {
-	fileName.innerHTML = fileInput.files[0].name;
+const fileLable = document.querySelectorAll(".calculation-label");
+const fileInput = document.querySelectorAll(".calculation-file");
+
+fileInput.forEach((item) => {
+	console.log(item);
+
+	item.addEventListener("change", function () {
+		// let fileName = item.previousElementSibling; і так теж можна
+		// console.log(fileName);
+		let fileName = item.closest('.input-box').querySelector('.file-name')
+        fileName.innerHTML = item.files[0].name;
+	});
 });
+// console.log(fileInput);
+fileLable.forEach((item) =>
+	item.closest(".form-row").previousElementSibling.classList.add("special-gap")
+);
+// fileInput.addEventListener("change", () => {
+// 	fileName.innerHTML = fileInput.files[0].name;
+// });
+
+// fileInput.closest(".form-row").classList.add("special-gap");
