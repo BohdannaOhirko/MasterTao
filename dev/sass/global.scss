@@ -439,38 +439,65 @@ ul.slick-dots {
 	}
 }
 .page-home {
-	section {
-		margin-top: 0;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: $section-margin-lg;
-		max-width: 1920px;
+    section {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $section-margin-lg;
+        max-width: 1920px;
 
-		&.container-fluid {
-			padding: 90px 85px 100px;
-			position: relative;
+        &.container-fluid {
+            padding: 90px 85px 100px;
+            position: relative;
 
-			&:before {
-				content: "";
-				border-radius: 20px;
-				position: absolute;
-				left: 42px;
-				right: 42px;
-				top: 0;
-				height: 100%;
-				background-color: $bg-secondary;
-			}
-		}
-
-		&:nth-child(odd) {
-			.template-title {
-				&:after {
-					background-color: $color-primary;
-				}
-			}
-		}
-	}
+            &:before {
+                content: "";
+                border-radius: 20px;
+                position: absolute;
+                left: 42px;
+                right: 42px;
+                top: 0;
+                height: 100%;
+                background-color: $bg-secondary;
+            }
+        }
+    }
 }
+
+section {
+    padding: 90px 0 100px;
+   // margin-bottom: $section-margin-lg;
+
+    &.accent {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            max-width: 1820px;
+            width: calc(100% - 30px);
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            border-radius: 20px;
+            background-color: $bg-secondary;
+        }
+    }
+
+    &:nth-child(odd) {
+
+        .template-title,
+        .template-title h2 {
+            &::after {
+                background-color: orange;
+            }
+        }
+    }
+}
+
+
 
 .template-title {
     padding-bottom: $section-title-margin;
@@ -482,7 +509,7 @@ ul.slick-dots {
         position: absolute;
         width: 84px;
         height: 2px;
-        background-color: $color-primary;
+        background-color: $color-secondary;
         left: 50%;
         bottom: 47px;
         transform: translate(-50%, 0);
@@ -566,4 +593,8 @@ body.overflow-hidden {
 		background-color: #0000008c;
 		backdrop-filter: blur(4px);
 	}
+}
+.swiper-initialized {
+    overflow: hidden;
+    position: relative;
 }

@@ -9,6 +9,7 @@
             h2:after {
                 content: "";
                 display: inline-block;
+             
             }
         } 
     }
@@ -19,6 +20,17 @@
                 left: 0;
                 transform: none;
             }
+        }
+    }
+    .slider-advantages {
+        .swiper-wrapper {
+            flex-wrap: wrap;
+            gap: 26px 0;
+        }
+
+        .swiper-slide {
+            max-width: 25%;
+
         }
     }
 }

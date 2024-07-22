@@ -1,13 +1,11 @@
 .first-screen {
 	padding-top: 0;
-	margin-bottom: 98px;
+    padding-bottom: 0;
+
 }
 
 .slider-info {
 	@extend .container-xxl;
-	overflow: hidden;
-	position: relative;
-
 	.swiper-slide {
 		display: flex;
 		align-items: center;
