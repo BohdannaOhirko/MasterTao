@@ -137,4 +137,51 @@
 	.calculation-decoration {
 		display: none;
 	}
+	.advantages {
+		.swiper-pagination {
+			display: flex;
+			gap: 26px;
+			justify-content: center;
+		}
+		.advantage-title {
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 22.41px;
+		}
+	}
+	.swiper-template {
+        padding: 0 0 25px;
+        margin: -15px -20px 0;
+
+        .swiper-slide {
+            padding: 15px;
+            // margin: 0 -15px;
+        }
+    }
+
+    .slider-info {
+        &.swiper-horizontal {
+            >.swiper-pagination-bullets {
+                bottom: 43px;
+            }
+        }
+    }
+
+    .swiper-horizontal {
+        >.swiper-pagination-bullets {
+            bottom: 0;
+        }
+    }
+
+    .swiper-template:before,
+    .swiper-template:after {
+        display: none;
+    }
+	.swiper-pagination {
+		display: flex;
+		gap: 26px;
+		justify-content: center;
+    }
 }
+
+
