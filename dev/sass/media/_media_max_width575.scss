@@ -1,3 +1,21 @@
 @media screen and (max-width: 575px) {
-    
+    .template-card {
+        padding: 0 23px 27px;
+        max-width: 335px;
+        .img-box {
+            margin: 0 -23px 27px;
+        }
+        .card-img {
+            height: 213px;
+        }
+    }
+    .btn-row {
+        gap: 12px;
+    .btn{
+        width: 138px;
+        justify-content: center;
+        padding: 13px 4px;
+    }
+}
+
 }

@@ -117,6 +117,38 @@ fileLable.forEach((item) =>
 //     mediaQuery(matchMedia1024);
 // });
 // /**/
+
+/*swiperAdvantages*/
+const advantagesCount = document.querySelectorAll('.slider-advantages .swiper-slide').length
+
+console.log(advantagesCount);
+
+const swiperAdvantages = new Swiper('.slider-advantages', {  
+    spaceBetween: 12,
+    loop: true,
+    simulateTouch: true,
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        enabled: true,
+    },
+    breakpoints: {
+      1025: {
+        spaceBetween: 0,
+        initialSlide: 0,
+        loop: false,
+        slidesPerGroup: advantagesCount,
+        simulateTouch: false,
+        pagination: {
+            enabled: false,
+            el: '.swiper-pagination',
+        },
+      }
+    }
+  });
+
+
 const swiperTemplate = new Swiper('.swiper-template', {
     speed: 700,
     loop: true,
