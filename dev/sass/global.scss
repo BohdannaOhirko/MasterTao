@@ -598,3 +598,11 @@ body.overflow-hidden {
     overflow: hidden;
     position: relative;
 }
+
+.about-row{
+	display: flex;
+	gap: 35px;
+	.img-box, .content-box{
+		width: 50%;
+	}
+}
