@@ -4,6 +4,13 @@
 	padding-top: 26px;
 	padding-bottom: 39px;
 }
+.logo {
+	img {
+		max-width: 172px;
+		height: 49px;
+	}
+}
+
 .mobile-container {
 	display: flex;
 	width: 100%;
@@ -34,13 +41,11 @@
 	border-radius: 90px;
 	letter-spacing: 0.4px;
 }
-.btn-burger{
+.btn-burger {
 	background: url(assets/img/icon-burger.svg) center no-repeat;
 	padding: 18px;
 	border: none;
-	&.open{
+	&.open {
 		background: url(assets/img/icon-burger-close.svg) center no-repeat;
-		
 	}
-	
 }

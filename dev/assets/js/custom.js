@@ -121,7 +121,7 @@ fileLable.forEach((item) =>
 /*swiperAdvantages*/
 const advantagesCount = document.querySelectorAll('.slider-advantages .swiper-slide').length
 
-console.log(advantagesCount);
+console.log(advantagesCount); //повертає колекцію слайдів, їхню кількість, довжину масива
 
 const swiperAdvantages = new Swiper('.slider-advantages', {  
     spaceBetween: 12,
